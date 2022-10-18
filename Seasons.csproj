@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netstandard2.1</TargetFramework>
@@ -15,7 +15,6 @@
     <PackageReference Include="BepInEx.Core" Version="5.*" />
     <PackageReference Include="BepInEx.PluginInfoProps" Version="1.*" />
     <PackageReference Include="TimberApi" Version="0.5.1" />
-    <PackageReference Include="Timberborn.GameLibs" Version="2022.8.4-r.0" />
     <PackageReference Include="UnityEngine.Modules" Version="2022.1.6" IncludeAssets="compile" />
   </ItemGroup>
   
@@ -30,10 +29,6 @@
     </Reference>
     <Reference Include="Bindito.Unity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
       <HintPath>E:\Games\steamapps\common\Timberborn\Timberborn_Data\Managed\Bindito.Unity.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="TimberAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
-      <HintPath>..\TimberAPI\TimberAPI\bin\Release\netstandard2.1\TimberAPI.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Timberborn.AlertPanelSystem, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">

@@ -16,12 +16,12 @@ public class PlantableService
     public void PauseGrowth()
     {
         var crops = Object.FindObjectsOfType<Crop>();
-        var farmhouses = Object.FindObjectsOfType<FarmHouse>();
-        foreach (var farmHouse in farmhouses)
-        {
-            var pausableBuilding = farmHouse.GetComponentInParent<PausableBuilding>();
-            pausableBuilding.Pause();
-        }
+        //var farmhouses = Object.FindObjectsOfType<FarmHouse>();
+        //foreach (var farmHouse in farmhouses)
+        //{
+        //    var pausableBuilding = farmHouse.GetComponentInParent<PausableBuilding>();
+        //    pausableBuilding.Pause();
+        //}
         SeasonsPlugin.ConsoleWriter.LogInfo($"Amount: {crops.Length}");
         foreach (var crop in crops)
         {
@@ -42,12 +42,12 @@ public class PlantableService
     public void ResumeGrowth()
     {
         var crops = Object.FindObjectsOfType<Crop>();
-        var farmhouses = Object.FindObjectsOfType<FarmHouse>();
-        foreach (var farmHouse in farmhouses)
-        {
-            var pausableBuilding = farmHouse.GetComponentInParent<PausableBuilding>();
-            pausableBuilding.Resume();
-        }
+        //var farmhouses = Object.FindObjectsOfType<FarmHouse>();
+        //foreach (var farmHouse in farmhouses)
+        //{
+        //    var pausableBuilding = farmHouse.GetComponentInParent<PausableBuilding>();
+        //    pausableBuilding.Resume();
+        //}
         foreach (var crop in crops)
         {
             SeasonsPlugin.ConsoleWriter.LogInfo($"{crop.name}");
